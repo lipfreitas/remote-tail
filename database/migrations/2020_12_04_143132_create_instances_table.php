@@ -15,6 +15,9 @@ class CreateInstancesTable extends Migration
     {
         Schema::create('instances', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('host');
+            $table->string('tailPath');
             $table->timestamps();
         });
     }
