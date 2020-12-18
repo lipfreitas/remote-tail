@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/frame/{token}/{instance}', [\App\Http\Controllers\Frameable::class, 'frame']);
+Route::get('/frame/{host}/{port}', [\App\Http\Controllers\Frameable::class, 'frame']);
